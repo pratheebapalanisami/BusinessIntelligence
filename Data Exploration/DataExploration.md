@@ -55,7 +55,13 @@ geom_point(mapping = aes(x=Phenophase_Category, y=Species,color = Kingdom))
 
 **Observation** - Reproduction is observed only for Citrea species. Distichum is the only species observed with Needles, Pollen Cones and Seed Cones Phenophase category.
 
+### Contributorship Statement
 
+I, Pratheeba Nalligounder Palanisami, am the sole author and contributor to this document, save the original data provided by Jean Lafitte National Historical Park and Preserve.
+
+### Proofreader Statement
+
+I, Pratheeba Nalligounder Palanisami, have proofread this document and approved it for submission.
 
 
 
