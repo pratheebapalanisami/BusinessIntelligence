@@ -69,7 +69,7 @@ ggplot(daily_counts, aes(x = Mean_First_Yes_DOY, y = count)) +
 geom_point()+
 geom_smooth()
 
-**Note** - I converted Phenophase ID column to categorical and counted number of Phenophase Id by the Day of Year to plot the trendline.
+**Note** - I converted Phenophase ID column to categorical with the below code snippet and counted number of Phenophase Id by the Day of Year to plot the trendline.
 
 > dataexp$Phenophase_ID <- as.factor(dataexp$Phenophase_ID)
 
