@@ -20,7 +20,7 @@ This project is licensed under the MIT License
 
 This assignment helps to understand about structuring data files for usability.  
 
-* [**_Data Exploration_**]()   
+* [**_Data Exploration_**](https://github.com/pratheebapalanisami/Data-To-Decisons/blob/master/Data%20Exploration/DataExploration.md)   
 
 This assignment helps in exploring the project using R.
 
