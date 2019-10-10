@@ -2,7 +2,12 @@
 
 In the dataset, I observed there are missing values coded as -9999 for 'Mean_First_Yes_DOY' column. Since this will skew the results, I filtered them out from the dataset using the below code snippet.
 
-> dataexp %>% filter(Mean_First_Yes_DOY!=-9999) %>%
+> library(dplyr)  
+dataexp %>% filter(Mean_First_Yes_DOY!=-9999) %>%
+
+I also have factored the Mean_First_Yes_Year column to be considered as categorical variable using the below code snippet
+
+> dataexp$Mean_First_Yes_Year <- as.factor(dataexp$Mean_First_Yes_Year)
 
 #### 1. Scatterplot of Phenophase Category and mean first YES observation
 
