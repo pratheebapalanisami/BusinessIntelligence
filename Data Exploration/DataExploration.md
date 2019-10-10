@@ -27,7 +27,7 @@ The pattern observed among Leaves, Fruits, and Flowers are similar with a very h
 > dataexp %>% filter(Median_First_Yes_DOY!=-9999) %>% ggplot(aes(x=Mean_First_Yes_DOY, y=Species,color = Kingdom)) +
 geom_point()
 
-**Observation** - Americana species fall under both Animalia and Plantae Kingdom where Animalia is observed only between 125 to 175 days of the year. The most observed Plantae species is Radicans. It occurs predominantly between 50 to 150 days of years which is end of winter to end of spring season.
+**Observation** - Americana species fall under both Animalia and Plantae Kingdom where Animalia is observed only between 125 to 175 days of the year. The most observed Plantae species is Radicans. It occurs predominantly between 50 to 150 days of the year which is end of winter to end of spring season.
 
 #### 3. Facted plot of Genus and mean first YES observation split with Site Name
 
@@ -37,8 +37,8 @@ geom_point()
 geom_point() +
 facet_grid(~Site_Name)
 
-**Observation** - Bayou Coquille and ring levee trials have more observations when compared to other trials.
-Genus Verbesina is observed only in the Visitor center trial. Likewise Gleditisia is observed only in RIng Levee trial.
+**Observation** - Bayou Coquille and Ring Levee trials have more observations when compared to other trials.
+Genus Verbesina is observed only in the Visitor Center trial. Likewise Gleditisia is observed only in Ring Levee trial.
 
 #### 4. Bar chart of Site Name and mean first YES observation 
 
@@ -49,7 +49,7 @@ geom_bar(stat = "count", position = position_dodge()) +
 geom_text(stat="count", aes(label=..count..), vjust = 1.6, color="white", size=3, position = position_dodge(1)))
 
 **Observation** - If we compare between all sites, 2018 is the year with most number of observations.
-If we compare all sites in 2017, trials Palmetto, Ring levee and Visitor center has an equal number of observations whereas Bayou Coquille has a high number of observations.
+If we compare all sites in 2017, trials Palmetto, Ring Levee and Visitor Center has an equal number of observations whereas Bayou Coquille has a high number of observations.
 
 #### 5. Scatterplot of Species and Phenophase Category with Kingdom variation
 
@@ -58,7 +58,7 @@ If we compare all sites in 2017, trials Palmetto, Ring levee and Visitor center 
 > ggplot(data = dataexp) +
 geom_point(mapping = aes(x=Phenophase_Category, y=Species,color = Kingdom))
 
-**Observation** - Reproduction is observed only for Citrea species. Distichum is the only species observed with Needles, Pollen Cones and Seed Cones Phenophase category.
+**Observation** - Reproduction is observed only for Citrea species. Distichum is the only species observed with Needles, Pollen Cones and Seed Cones Phenophase categories.
 
 ### Contributorship Statement
 
@@ -67,12 +67,3 @@ I, Pratheeba Nalligounder Palanisami, am the sole author and contributor to this
 ### Proofreader Statement
 
 I, Pratheeba Nalligounder Palanisami, have proofread this document and approved it for submission.
-
-
-
-
-
-
-
-
-
