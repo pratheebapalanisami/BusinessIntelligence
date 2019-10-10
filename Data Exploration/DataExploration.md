@@ -60,6 +60,22 @@ geom_point(mapping = aes(x=Phenophase_Category, y=Species,color = Kingdom))
 
 **Observation** - Reproduction is observed only for Citrea species. Distichum is the only species observed with Needles, Pollen Cones and Seed Cones Phenophase categories.
 
+#### 6. Scatterplot of Phenophase ID and mean first YES observation with trendline
+
+![Plot6](https://github.com/pratheebapalanisami/Data-To-Decisons/blob/master/Data%20Exploration/Rplot_Trendline.png)
+
+> daily_counts <- dataexp %>% filter(dataexp$Mean_First_Yes_DOY != -9999) %>% group_by(Mean_First_Yes_DOY, Phenophase_ID) %>% summarise(count = n())  
+ggplot(daily_counts, aes(x = Mean_First_Yes_DOY, y = count)) +
+geom_point()+
+geom_smooth()
+
+**Note** - I converted Phenophase ID column to categorical and counted number of Phenophase Id by the Day of Year to plot the trendline.
+
+> dataexp$Phenophase_ID <- as.factor(dataexp$Phenophase_ID)
+
+**Observation** - The number of Phenophase IDs by Mean_First_Yes_DOY has a V-shaped trend. There is drastic decline in number of IDs from 75 to 150 days of the year. It increases steadily from 150 to end of the year. 
+
+
 ### Contributorship Statement
 
 I, Pratheeba Nalligounder Palanisami, am the sole author and contributor to this document, save the original data provided by Jean Lafitte National Historical Park and Preserve.
